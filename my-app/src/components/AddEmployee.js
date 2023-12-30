@@ -49,7 +49,7 @@ const AddEmployee = () => {
                     console.log('Something went wrong', error);
                 })
         }
-    }, [])
+    }, [id])
     return(
         <div className="container">
             <h3>Add Employee</h3>
