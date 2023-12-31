@@ -6,7 +6,7 @@ services:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root 
-      MYSQL_DATABASE: portal 
+      MYSQL_DATABASE: employeeportal 
     ports:
       - "3307:3306"
     volumes:
@@ -26,8 +26,8 @@ services:
       - mysqldb
     environment:  
       - spring.datasource.url=jdbc:mysql://mysqldb:3306/employeeportal
-      - spring.datasource.username=root
-      - spring.datasource.password=
+      - spring.datasource.username=oumayma
+      - spring.datasource.password=jellali@OUMAYMA
       - spring.jpa.hibernate.ddl-auto=update
     networks:
       - springboot-mysql-net
