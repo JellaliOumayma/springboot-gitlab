@@ -42,8 +42,6 @@ services:
     depends_on:
       - backend
     networks:
-      - springboot-mysql-net
-    restart: always  
-
+      - springboot-mysql-net 
 networks:
   springboot-mysql-net:
